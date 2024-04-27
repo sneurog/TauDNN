@@ -8,7 +8,7 @@
 
 **Contributors/Advisors :** Daren Ma, MSc.,  Justin Torok, PhD.
 
-**Description :** This project contains a Deep Neural Network to both predict the initial seed location and the forward progress of tau tangle concentration in the brain.
+**Description :** This project contains a Physics-Informed Neural Network to both predict the initial seed location and the forward progress of tau tangle concentration in the brain.
 
 ## Subdirectories 
 
@@ -28,15 +28,19 @@ We decided to omit the data contained in this folder to adhere to patient privac
         - **File Outputs**: Saves final datasets, such as reordered connectome data and merged datasets, ensuring that data integrity and consistency are maintained across operations.
 
 
-- **Physics Informed Neural Network in `DNNTau.ipynb`**:
-    - This script focuses on the development and implementation of a Physics Informed Neural Network (PINN) to predict the initial seeding and progression of tau protein in the brain. It includes the creation of the neural network model, preprocessing steps to prepare input data from demographics and connectome datasets, and the execution of training and validation processes using cross-validation techniques.
+- **Deep Neural Network in `DNNTau.ipynb`**:
+    - This script focuses on the development and implementation of a Deep Neural Network (DNN) to predict the initial seeding and progression of tau protein in the brain. It includes the creation of the neural network model, preprocessing steps to prepare input data from demographics and connectome datasets, and the execution of training and validation processes using cross-validation techniques.
     - **Model Definition and Initialization**: Defines the `TauPINN` class that incorporates neural network layers tailored to predict both tau propagation and the associated times of progression based on input features derived from brain imaging and demographic data.
     - **Training and Evaluation**: Implements training sessions using custom loss functions that integrate mean squared error and optional L1 regularization. It provides detailed evaluation metrics such as Dice scores and correlation coefficients for both training and testing phases, alongside visual plots to track the performance over epochs.
     - **Cross-Validation Framework**: Utilizes a K-fold cross-validation approach to ensure the model's robustness and generalizability, with detailed outputs for each fold, including loss and accuracy metrics, and final testing on a separate test dataset.
     - **Predictive Outputs**: The script includes functions to extract and display predicted initial tau concentrations across different brain regions, providing insights into potential areas of highest tau accumulation.
   
+- `nexis.py`: Nexis models.
 
-- `README.md `: This file.
+
+- `LICENSE`: MIT License
+
+- `README.md`: This file.
 
 
 ## Steps To Run
