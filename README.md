@@ -8,7 +8,7 @@
 
 **Contributors/Advisors :** Daren Ma, MSc.,  Justin Torok, PhD.
 
-**Description :** This project contains a Physics-Informed Neural Network to both predict the initial seed location and the forward progress of tau tangle concentration in the brain.
+**Description :** This project contains a Deep Neural Network to both predict the initial seed location and the forward progress of tau tangle concentration in the brain.
 
 ## Subdirectories 
 
